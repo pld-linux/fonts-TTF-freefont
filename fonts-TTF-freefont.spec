@@ -8,6 +8,7 @@ Group:		Fonts
 Source0:	ftp://ftp.gnu.org/savannah/files/freefont/freefont-ttf.zip
 # Source0-md5:	b2c9a6348c7679ef2c8fd66250b5ba36
 URL:		http://www.nongnu.org/freefont/
+BuildRequires:	unzip
 Requires(post,postun):	fontpostinst
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
