@@ -1,5 +1,5 @@
 Summary:	Free True Type fonts
-Summary(pl):	Darmowe fonty True Type
+Summary(pl.UTF-8):   Darmowe fonty True Type
 Name:		fonts-TTF-freefont
 Version:	20031008
 Release:	1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package contains very nice and free fonts TTF.
 
-%description -l pl
-Ten pakiet zawiera bardzo ³adne i darmowe fonty TTF.
+%description -l pl.UTF-8
+Ten pakiet zawiera bardzo Å‚adne i darmowe fonty TTF.
 
 %prep
 %setup -q -c
