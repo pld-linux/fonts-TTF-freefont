@@ -1,5 +1,5 @@
 Summary:	Free True Type fonts
-Summary(pl.UTF-8):   Darmowe fonty True Type
+Summary(pl.UTF-8):	Darmowe fonty True Type
 Name:		fonts-TTF-freefont
 Version:	20031008
 Release:	1
