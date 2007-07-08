@@ -1,12 +1,12 @@
 Summary:	Free True Type fonts
 Summary(pl.UTF-8):	Darmowe fonty True Type
 Name:		fonts-TTF-freefont
-Version:	20031008
+Version:	20060126
 Release:	1
 License:	GPL v2
 Group:		Fonts
-Source0:	ftp://ftp.gnu.org/savannah/files/freefont/freefont-ttf.zip
-# Source0-md5:	b2c9a6348c7679ef2c8fd66250b5ba36
+Source0:	http://download.savannah.nongnu.org/releases/freefont/freefont-ttf-20060126.tar.gz
+# Source0-md5:	822aba4e2ed065d9d3ded6e26e495854
 URL:		http://www.nongnu.org/freefont/
 BuildRequires:	unzip
 Requires(post,postun):	fontpostinst
@@ -22,13 +22,13 @@ This package contains very nice and free fonts TTF.
 Ten pakiet zawiera bardzo ładne i darmowe fonty TTF.
 
 %prep
-%setup -q -c
+%setup -q -n freefont-%{version}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{ttffontsdir}
 
-install sfd/*.ttf $RPM_BUILD_ROOT%{ttffontsdir}
+install *.ttf $RPM_BUILD_ROOT%{ttffontsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
