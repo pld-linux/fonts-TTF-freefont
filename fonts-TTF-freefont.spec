@@ -1,14 +1,13 @@
-Summary:	Free True Type fonts
-Summary(pl.UTF-8):	Darmowe fonty True Type
+Summary:	Free UCS scalable fonts in TrueType format
+Summary(pl.UTF-8):	Wolnodostępne skalowalne fonty UCS w formacie TrueType
 Name:		fonts-TTF-freefont
-Version:	20060126
+Version:	20080323
 Release:	1
 License:	GPL v2
 Group:		Fonts
-Source0:	http://download.savannah.nongnu.org/releases/freefont/freefont-ttf-20060126.tar.gz
-# Source0-md5:	822aba4e2ed065d9d3ded6e26e495854
-URL:		http://www.nongnu.org/freefont/
-BuildRequires:	unzip
+Source0:	http://ftp.gnu.org/gnu/freefont/freefont-ttf-%{version}.tar.gz
+# Source0-md5:	cf203bb6ce80783c1a51ae1d0b2bb98c
+URL:		http://www.gnu.org/software/freefont/
 Requires(post,postun):	fontpostinst
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -16,10 +15,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		ttffontsdir	%{_fontsdir}/TTF
 
 %description
-This package contains very nice and free fonts TTF.
+This project aims to provide a set of free scalable fonts covering the
+ISO 10646/Unicode UCS (Universal Character Set).
 
 %description -l pl.UTF-8
-Ten pakiet zawiera bardzo ładne i darmowe fonty TTF.
+Celem tego projektu jest udostępnienie zestawu wolnodostępnych fontów
+skalowalnych pokrywających zakres uniwersalnego zestawu znaków ISO
+10646/Unicode.
 
 %prep
 %setup -q -n freefont-%{version}
@@ -41,5 +43,7 @@ fontpostinst TTF
 
 %files
 %defattr(644,root,root,755)
-%doc README CREDITS AUTHORS ChangeLog
-%{ttffontsdir}/*.ttf
+%doc AUTHORS CREDITS ChangeLog README
+%{ttffontsdir}/FreeMono*.ttf
+%{ttffontsdir}/FreeSans*.ttf
+%{ttffontsdir}/FreeSerif*.ttf
