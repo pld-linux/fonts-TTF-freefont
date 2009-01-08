@@ -1,12 +1,12 @@
 Summary:	Free UCS scalable fonts in TrueType format
 Summary(pl.UTF-8):	Wolnodostępne skalowalne fonty UCS w formacie TrueType
 Name:		fonts-TTF-freefont
-Version:	20080912
+Version:	20090104
 Release:	1
 License:	GPL v2
 Group:		Fonts
 Source0:	http://ftp.gnu.org/gnu/freefont/freefont-ttf-%{version}.tar.gz
-# Source0-md5:	7af906b00144ad8cca27f6494a37a052
+# Source0-md5:	1128bb17763cde6990eacd5996f7def7
 URL:		http://www.gnu.org/software/freefont/
 Requires(post,postun):	fontpostinst
 BuildArch:	noarch
